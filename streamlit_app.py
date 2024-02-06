@@ -1,3 +1,4 @@
+streamlit.stop()
 import snowflake.connector
 import streamlit
 import pandas

@@ -1,5 +1,9 @@
 import streamlit # first_streamlit_app
 import pandas
+# Let's put a pick list here so they can pick the fruit they want to include 
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
+
+# Display the table on the page.
 streamlit.title('My Parents New Healthy Diner')
 
 streamlit.header('🍞Breakfast Menu')

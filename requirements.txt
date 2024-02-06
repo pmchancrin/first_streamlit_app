@@ -1,2 +1,10 @@
 # requirements.txt
 snowflake-connector-python
+pandas_ta
+pandas
+yfinance
+mplfinance
+Jinja2
+streamlit
+matplotlib
+functions.generate_db

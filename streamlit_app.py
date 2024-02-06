@@ -1,6 +1,7 @@
 import snowflake.connector
 import streamlit
 import pandas
+client_session_keep_alive = "True"
 
 # Display the table on the page.
 streamlit.title('My Parents New Healthy Diner')

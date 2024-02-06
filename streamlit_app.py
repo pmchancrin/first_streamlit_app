@@ -1,6 +1,9 @@
 import streamlit # first_streamlit_app
 import pandas
 
+my_fruit_list = my_fruit_list.set_index('Fruit')
+
+
 # Display the table on the page.
 streamlit.title('My Parents New Healthy Diner')
 

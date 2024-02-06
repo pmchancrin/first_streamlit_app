@@ -1,4 +1,3 @@
-streamlit.stop()
 import snowflake.connector
 import streamlit
 import pandas
@@ -27,4 +26,4 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Hello choose fruits:")
 streamlit.dataframe(my_data_rows)
 streamlit.multiselect("what fruit would you like to add:", list(my_fruit_list.Fruit))
-my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit)");
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit)")

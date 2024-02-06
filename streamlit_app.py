@@ -17,7 +17,7 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # Display the table on the page.
 streamlit.dataframe(my_fruit_list)
 
-streamlit.write('Thanks for adding ' add_my_fruit)
+
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
@@ -26,3 +26,4 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Hello choose fruits:")
 streamlit.dataframe(my_data_rows)
 streamlit.multiselect("what fruit would you like to add:", list(my_fruit_list.Fruit))
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit)");
